@@ -1,0 +1,4 @@
+//To count the number of digits from a alphanumeric String
+#!/bin/bash
+num='a12bfffsa012dfgfgd'
+awk -F '[0-9]' '{print NF-1;}' <<< "$num"
