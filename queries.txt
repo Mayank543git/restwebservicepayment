@@ -1,0 +1,8 @@
+1. To find the name of the employee with max salary
+ select name,salary from employee where salary=(select max(salary) from employee)
+2. To find the 3rd highest salary
+ select min(salary) from employee where salary IN (select salary from employee order by salary desc limit 3)
+3. avg salary of male employees
+ select avg(salary) from employee where gender='M'
+4. display the salary of all male employee in desc order
+ select salary from employee where gender='M' order by salary desc
