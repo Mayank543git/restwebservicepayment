@@ -1,0 +1,34 @@
+#!/bin/bash
+
+read -p "Enter the two numbers" a b
+
+
+f=$a
+
+g=$b
+
+while [ $a -ne $b ]
+
+do
+
+if [ $a -gt $b    ]
+
+then
+
+a=`expr $a - $b`
+
+else
+
+b=`expr $b - $a`
+
+fi
+
+done
+
+echo "gcf is "$a
+
+lcm=`expr $f * $g`
+
+lcm=`expr $lcm / $a`
+
+echo "lcm is "$lcm
