@@ -1,0 +1,8 @@
+#!/bin/bash
+read -p "Enter a string: " string
+if [[ $(echo $string|rev) == $string ]];
+then
+echo "palindrome"
+else
+echo "not a palindrome"
+fi
